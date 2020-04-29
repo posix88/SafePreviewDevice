@@ -29,12 +29,17 @@ Xcode’s SwiftUI preview lets us show our application design in multiple screen
 ```swift
 .previewDevice(PreviewDevice(rawValue: "iPhone XS Max"))
 ```
+or even better
 
-This framework comes to rescue for everyone that want an easy way to select their preview device, and also for those who doesn't remember every iOS 13 supported device 😀 (like me)
+```swift
+.previewDevice(.iPhone7)
+```
+
+This framework comes to rescue for everyone that are looking for an easy way to select their preview device or they just doesn't remember every iOS 13 device name (like me 😀)
 
 ## System Requirements
 
-Supported platforms are `iOS (13.0)`, `tvOS (13.0)`, `watchOS (6.0)` and `macOS (10.15)`
+Supported platforms are `iOS (13.0)`, `tvOS (13.0)`, `watchOS (6.0)` and `macOS (10.15)` and of course `Xcode 11`.
 
 ## Installation
 
