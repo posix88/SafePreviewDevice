@@ -2,15 +2,15 @@
 
 <p align="center">
     <a href="#">
-        <img src="https://img.shields.io/badge/swift-5.1-FFAC45.svg" alt="Swift: 5.1">
+        <img src="https://img.shields.io/badge/swift-5.1-orange.svg" alt="Swift: 5.1">
     </a>
     <a href="https://github.com/posix88/SafePreviewDevice/releases">
         <img src="https://img.shields.io/badge/version-0.1.0-blue.svg"
         alt="Version: 0.1.0">
     </a>
     <a href="#">
-    <img src="https://img.shields.io/badge/Platforms-iOS%20|%20tvOS%20|%20watchOS-FF69B4.svg"
-        alt="Platforms: iOS – tvOS – watchOS">
+    <img src="https://img.shields.io/badge/Platforms-iOS%20|%20tvOS%20|%20watchOS|%20macOS-green.svg"
+        alt="Platforms: iOS – tvOS – watchOS - macOS">
     </a>
     <a href="https://github.com/piknotech/SFSafeSymbols/blob/stable/LICENSE.md">
         <img src="https://img.shields.io/badge/license-MIT-lightgrey.svg" alt="License: MIT">
