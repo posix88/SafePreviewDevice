@@ -19,6 +19,9 @@
     <a href="https://github.com/apple/swift-package-manager">
         <img src="https://img.shields.io/badge/SwiftPM-compatible-brightgreen.svg" alt="SwiftPM: Compatible">
     </a>
+    <a href="https://cocoapods.org/pods/SafePreviewDevice">
+    <img src="https://img.shields.io/badge/CocoaPods-compatible-4BC51D.svg?style=flat" alt="CocoaPods: Compatible">
+    </a>
 </p>
 
 ## Motivation
@@ -56,6 +59,22 @@ To integrate using Apple's Swift package manager, add the following as a depende
 and  run `swift package update`.
 
 Otherwise you can simply go to File -> Swift Packages -> Add Package Dependency and paste the repo's url: `https://github.com/posix88/SafePreviewDevice`
+
+## Usage
+
+Simply import this framework in your `SwiftUI` file and add one of this `View` modifier
+
+### Change the preview device
+```swift
+.previewDevice(.iPhone7)
+```
+This modifier will change the device in Xcode SwiftUI preview.
+
+### Change the preview device name
+```swift
+.previewDeviceName(.iPhone7)
+```
+This modifier will change the device name in Xcode SwiftUI preview.
 
 ## Contributing
 
