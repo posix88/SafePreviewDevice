@@ -49,6 +49,8 @@ public extension View {
     
     /// Returns a list of devices for a preview with a given color schemes
     ///
+    /// The returned devices has a default device name equal to the name of the device
+    /// 
     /// - Parameters:
     ///   - devices: a list of choosen devices
     ///   - colorSchemes: a list of color schemes to be used
