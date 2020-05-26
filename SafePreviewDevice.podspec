@@ -16,11 +16,11 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SafePreviewDevice"
-  spec.version      = "0.1.0"
+  spec.version      = "0.2.0"
   spec.summary      = "Safe and fast access to SwiftUI PreviewDevice"
 
   spec.description  = <<-DESC
-  This framework comes to rescue for everyone that are looking for an easy way to select their preview device or they just doesn't remember every iOS 13 device name (like me 😀)
+  This framework comes to rescue for everyone that are looking for an easy way to select their SwiftUI preview device or they just doesn't remember every iOS 13 device name (like me 😀)
                    DESC
 
   spec.homepage     = "https://github.com/posix88/SafePreviewDevice"
