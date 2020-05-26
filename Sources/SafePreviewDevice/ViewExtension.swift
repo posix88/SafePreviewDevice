@@ -19,6 +19,14 @@ public extension View {
         return previewDevice(device)
     }
     
+    /// Overrides the device for a preview, showing also the device name as canvas name
+    /// - Parameter device: the choosen device
+    /// - Returns: The Xcode preview canvas `View` with the visible name label below preview canvas
+    func previewNamedDevice(_ device: Devices) -> some View {
+        previewDevice(device)
+            .previewDeviceName(device)
+    }
+    
     /// Provides a user visible name shown in the editor.
     /// - Parameter device: the choosen device
     /// - Returns: The visible name label below preview canvas

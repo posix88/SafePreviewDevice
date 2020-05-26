@@ -60,21 +60,68 @@ and  run `swift package update`.
 
 Otherwise you can simply go to File -> Swift Packages -> Add Package Dependency and paste the repo's url: `https://github.com/posix88/SafePreviewDevice`
 
+### CocoaPods
+
+Add the following entry to your Podfile:
+
+```rb
+pod 'SafePreviewDevice'
+```
+
+Then run `pod install`.
+
 ## Usage
 
-Simply import this framework in your `SwiftUI` file and add one of this `View` modifier
+Simply import this framework in your `SwiftUI` file and add one of this `View` modifier to your preview:
 
-### Change the preview device
+### Display a preview device
 ```swift
 .previewDevice(.iPhone7)
 ```
-This modifier will change the device in Xcode SwiftUI preview.
+This modifier will change the displayed device in the Xcode SwiftUI preview.
 
 ### Change the preview device name
 ```swift
 .previewDeviceName(.iPhone7)
 ```
-This modifier will change the device name in Xcode SwiftUI preview.
+This modifier will change the displayed device name in the Xcode SwiftUI preview.
+
+## What's new 🚀
+
+### Display a named preview device
+```swift
+.previewNamedDevice(.iPhone7)
+```
+This modifier is the union between the first APIs. 
+It will change the displayed device in the Xcode SwiftUI preview setting also the device name.
+
+### Display a preview device applying the color scheme
+```swift
+.previewDevice(.iPhone7, withColorScheme: .dark)
+```
+This modifier will change the displayed device in the Xcode SwiftUI preview. It also apply the selected color scheme.
+
+### Display a named preview device applying the color scheme
+```swift
+.previewNamedDevice(.iPhone7, withColorScheme: .dark)
+```
+This modifier will change the displayed named device in the Xcode SwiftUI preview. It also apply the selected color scheme.
+
+### Display a group of named preview device applying a list of color scheme
+```swift
+.previewDevices([.iPhone7, .iPhoneSE, .iPhoneX], withColorScheme: [.dark, .light])
+```
+This modifier provides an inline alternative to 
+```swift
+Group {
+    MyView().previewDevice(.iPhone7, withColorScheme: .dark)
+    MyView().previewDevice(.iPhone7, withColorScheme: .light)
+    MyView().previewDevice(.iPhoneSE, withColorScheme: .dark)
+    MyView().previewDevice(.iPhoneSE, withColorScheme: .light)
+    MyView().previewDevice(.iPhoneX, withColorScheme: .dark)
+    MyView().previewDevice(.iPhoneX, withColorScheme: .light)
+}
+```
 
 ## Contributing
 
