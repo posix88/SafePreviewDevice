@@ -38,7 +38,7 @@ or even better
 .previewDevice(.iPhone7)
 ```
 
-This framework comes to rescue for everyone that are looking for an easy way to select their preview device or they just doesn't remember every iOS 13 device name (like me 😀)
+This framework comes to rescue for everyone that is looking for an easy way to select their preview device or they just don't remember every iOS 13 device name (like me 😀)
 
 ## System Requirements
 
@@ -56,9 +56,9 @@ To integrate using Apple's Swift package manager, add the following as a depende
 .package(url: "https://github.com/posix88/SafePreviewDevice.git", .upToNextMajor(from: "0.1.0"))
 ```
 
-and  run `swift package update`.
+and run `swift package update`.
 
-Otherwise you can simply go to File -> Swift Packages -> Add Package Dependency and paste the repo's url: `https://github.com/posix88/SafePreviewDevice`
+Otherwise, you can simply go to File -> Swift Packages -> Add Package Dependency and paste the repo's URL: `https://github.com/posix88/SafePreviewDevice`
 
 ### CocoaPods
 
@@ -99,13 +99,13 @@ It will change the displayed device in the Xcode SwiftUI preview setting also th
 ```swift
 .previewDevice(.iPhone7, withColorScheme: .dark)
 ```
-This modifier will change the displayed device in the Xcode SwiftUI preview. It also apply the selected color scheme.
+This modifier will change the displayed device in the Xcode SwiftUI preview. It also applies the selected color scheme.
 
 ### Display a named preview device applying the color scheme
 ```swift
 .previewNamedDevice(.iPhone7, withColorScheme: .dark)
 ```
-This modifier will change the displayed named device in the Xcode SwiftUI preview. It also apply the selected color scheme.
+This modifier will change the displayed named device in the Xcode SwiftUI preview. It also applies the selected color scheme.
 
 ### Display a group of named preview device applying a list of color scheme
 ```swift
